@@ -3,8 +3,7 @@ function divisible(a) {
     
     for (i = 0; i < a.length; i++) {        // returns the number of the elements in that array a 
         if (a[i] % 2 === 0 && a[i] > 15) {    //that are divisible by 2 and greater than 15.                                 
-         count++;
-        
+         count++;      
 }
     }
     return count;

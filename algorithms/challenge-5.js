@@ -1,5 +1,5 @@
 function replaceDivisible(x, y) {            //Implement the function replaceDivisible(x, y) which replaces all numbers in an array,
-                                                //x divisible by an integer, y with string “isDivisible”
+                                                //x divisible by an integer, y , with string “isDivisible”
     let arr = []
     for (let i = 0 ; i < x.length; i++) {
         if(x[i] % y === 0) {

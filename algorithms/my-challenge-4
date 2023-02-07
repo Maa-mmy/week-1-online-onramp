@@ -1,0 +1,29 @@
+/*function countUniqueValues(arr) {                  // Implement a function countUnique values which accepts a sorted array and 
+    let  obj = {};                                 //counts the unique values in the array. 
+     let count = 0                                              // For example, 
+    
+     for (let i = 0; i < arr.length; i++) {         // countUnique[1, 1, 1, 2] => 2
+        if(obj[arr[i]]) {                      // countUnique[] => 0
+            obj[arr[i]] += 1;
+        } else {
+         obj[arr[i]] = 1
+        }
+     }
+
+        for(let key in obj) {
+        count++
+        }
+    
+    return count;
+     
+}
+*/
+
+
+function countUniqueValues(arr){
+    return new Set(arr).size;
+}
+console.log(countUniqueValues([[1,2,3], 2, 3, 3, 4, 4, 5]))
+console.log(countUniqueValues([1, 1, 1, 2]))
+console.log(countUniqueValues([]))
+console.log(countUniqueValues([1,2,2,2,3,3,4,4,4,4,4,5,5,6,6,6]));

@@ -1,0 +1,7 @@
+function smallAndLarge(arr) {           //Given an array of numbers, return the second smallest and 
+                                   //second largest numbers in an array.
+    arr.sort((a,b) => a - b)             //example
+    return [arr[1], arr[arr.length-2]];             //[2,3,4,9,7] = [3, 7]
+   }                                    
+  
+console.log(smallAndLarge([2,3,4,9,7]))
