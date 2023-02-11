@@ -20,9 +20,9 @@ function highestCharacter(str) {
     for (let key of keys){
         if (store[key] === highest){
             return key;
-        }
+        } 
     }
-
 }
 
-console.log(maxCharacter('I want to eat'))  
+console.log(highestCharacter('I want to eat'))  
+console.log(highestCharacter('I love to swim at the beach')) 

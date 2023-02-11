@@ -3,7 +3,10 @@
 //Let strings = ["Tosin", "Tobi", "Tosin", "Femi", "Tosin", "Tobi"]
 
 function uniqueItems(arr) {
-    return new Set(arr);
+    let set = new Set(arr);
+    let array = new Array(...set);
+
+    return array;
 }
 
 console.log(uniqueItems(["Tosin", "Tobi", "Tosin", "Femi", "Tosin", "Tobi"]))

@@ -1,0 +1,13 @@
+function elementsEqualTo(arrY,x) {               //Find the elements in an array Y, that are equal to a given variable X. 
+let newArr = [];
+
+for(let i = 0; i < arrY.length; i++) {
+    if(arrY[i] === x) {
+        newArr.push(arrY[i])
+    }
+}
+return newArr
+}
+
+console.log(elementsEqualTo(['a','a','b','f','x','y'],'a'))
+console.log(elementsEqualTo(['t','3',3,3,'5','v'],3))

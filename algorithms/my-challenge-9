@@ -1,14 +1,9 @@
-//You have an array of user objects, each one has user.name.
-//Write a function that converts it into an array of names.
-//For instance
-//let mary = {name: "John", age: 25};
-//let users = [john, pete, mary]
-
-let john = {name: "John", age: 25};
-let peter = {name: "Peter", age: 30};
-let users = [john, peter];
-
-function getUserNames(users) {
+let users = [                                    //You have an array of user objects, each one has user.name.
+    {name: "John", age: 25},                     //Write a function that converts it into an array of names.
+    {name: "Peter", age: 30}  
+]                                                       //For instance
+                                                        //let mary = {name: "John", age: 25};
+function getUserNames(users) {                           //let users = [john, pete, mary]
     return users.map(user => user.name);
 }
 

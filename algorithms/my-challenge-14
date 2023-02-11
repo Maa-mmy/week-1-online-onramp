@@ -1,0 +1,23 @@
+/*function sumNumbersInString(str){                        //Find all the numbers in a string and sum them up
+    let sum = 0;                                          //For Example :
+    let s = "0";                                          //expect('1weudh56jdnbfskjn788sdhkfbs90')) //to return (935)
+    for (let i = 0; i < str.length ; i++) {
+      if(!isNaN(str[i])) {
+        s += str[i] 
+      } else {
+        sum += +s
+        s = "0"  
+      }
+    }
+   return sum += +s
+  }  
+  */
+  console.log(sumNumbersInString('1weudh56jdnbfskjn788sdhkfbs90')) //to return (935)
+
+
+
+  function sumNumbersInString(str) {
+    let numbers = str.match(/\d+/g) || [];
+    return numbers.reduce((a,b) => Number(a) + Number(b));
+  }
+  

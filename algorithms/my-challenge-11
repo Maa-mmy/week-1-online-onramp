@@ -1,0 +1,25 @@
+function translateCommands(commands) {                   // Write a function to translate an array of commands provided as integers to strings.
+  let textCommands = [];                    //YOu will be given an array of integers, each integer in the array translates to a command in English,
+                                         //your task is to translate the integer commands to their equivalent text commands. 
+  commands.forEach(command => {           //Here is how each command maps to a string. 
+    switch (command) {                         // 1 : 'UP'
+      case 1:                                  // -1 : 'DOWN'
+        textCommands.push('UP');               // -5 : 'Left'
+        break;                                // 5 : 'Right'
+      case -1:
+        textCommands.push('DOWN');
+        break;
+      case -5:
+        textCommands.push('LEFT');
+        break;
+      case 5:
+        textCommands.push('RIGHT');
+        break;
+      default:
+        textCommands.push('INVALID');
+        break;
+    }
+  });
+  
+  return textCommands;
+}

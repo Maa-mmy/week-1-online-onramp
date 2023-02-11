@@ -1,0 +1,24 @@
+function encode(word) {               //Create a function called encode to replace all the lowercase vowels 
+    word = word.split('')             //in a given string with numbers according to the following pattern 
+    let newArray = [];                //Where a -> 1
+                                      // e -> 2
+    for (let char of word) {          // i -> 3
+        if (char === 'a') {           // o -> 4
+            newArray.push(1);         //u -> 5
+        } else if (char == 'e') {
+            newArray.push(2);
+        } else if (char == 'i') {
+            newArray.push(3);
+        } else if (char == 'o') {
+            newArray.push(4);
+        } else if (char == 'u') {
+            newArray.push(5);
+        } else {
+            newArray.push(char)
+        }
+    }
+    return newArray.join('')
+}
+
+
+console.log(encode("hello")) // to return h2ll4

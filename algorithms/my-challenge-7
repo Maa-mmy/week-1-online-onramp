@@ -4,9 +4,12 @@
 //let arr = [5,3,8,1], let filtered = filterRange(arr, 1, 4);
 //ans: 3, 1.
 
-function filterRange (arr, a, b){
+/*function filterRange (arr, a, b){
     return arr.filter ((item) => item >= a && item <= b);
 }
+*/
 
-
+function filterRange (arr, a, b){
+    
+}
 console.log(filterRange([5,3,8,1], 1, 4))

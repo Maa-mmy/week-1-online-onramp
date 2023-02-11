@@ -1,5 +1,5 @@
-function fibonacci(n) {                             //write a function fibonacci and generate a series of numbers 
-const a = 0;                                       //in which each number is the
+function fibonacci(n) {                             //write a function fibonacci and generate a series of numbers in
+const a = 0;                                       // which each number is the
 const b = 1;                                      //sum of the two preceding ones, starting from 0 and 1
 
 if (n == a) {                                     //The Fibonacci sequence is a series of numbers in which each

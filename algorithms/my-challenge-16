@@ -1,0 +1,21 @@
+function lengthOfArrayWithHighestSum(arr1, arr2){              //Write a function that takes in two arrays of numbers
+                                                        //and returns the length of the array with the highest sum of its elements
+    let highest = Math.max(arr1.reduce((a,b) => a + b), arr2.reduce((a,b) => a + b))
+if(arr1 == highest) {
+    return arr1.length
+} else {
+   return arr2.length
+}
+}
+
+
+/*function lengthOfArrayWithHighestSum(arr1, arr2) {
+    let sum1 = arr1.reduce((a, b) => a + b, 0);
+    let sum2 = arr2.reduce((a, b) => a + b, 0);
+    return sum1 > sum2 ? arr1.length : arr2.length;
+  }
+*/
+  
+console.log(lengthOfArrayWithHighestSum([3,5,1,7,9], [11, 31]))
+console.log(lengthOfArrayWithHighestSum([13, 11, 3, 1], [4, 9, 1]))
+console.log(lengthOfArrayWithHighestSum([20], [1, 18]))

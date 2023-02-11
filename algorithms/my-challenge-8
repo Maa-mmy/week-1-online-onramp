@@ -1,7 +1,6 @@
 function decrease(arr) {         //Sort in decreasing order, let arr = [5, 2, 1, -10, 8]
-    return arr.sort((a,b) => b - a) //(b) let arr = ["HTML", "Javascript", "CSS"]
+    return arr.sort()            //(b) let arr = ["HTML", "Javascript", "CSS"]
     }
-
 
     console.log(decrease([5,2,1,-10,8]))
     console.log(decrease(["HTML", "Javascript", "CSS"]))
